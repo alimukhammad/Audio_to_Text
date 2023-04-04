@@ -9,6 +9,6 @@ with sr.AudioFile('audio_files_harvard.wav') as source:
     try:
         text = r.recognize_google(audio_text)
         print('Converting audio transcripts into text ')
-        print(text)
+        print('--' + text)
     except:
         print('Pardon... Can you repeat')
